@@ -1,14 +1,8 @@
 package dev.andreia.santanderdevweek2023.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.Entity;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class Feature {
+@Entity(name = "tb_feature")
+public class Feature extends BaseItem{
 
-    private String icon;
-    private String description;
 }

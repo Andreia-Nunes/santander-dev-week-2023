@@ -1,15 +1,9 @@
 package dev.andreia.santanderdevweek2023.model;
 
+import jakarta.persistence.Entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class News {
+@Entity(name = "tb_news")
+public class News extends BaseItem{
 
-    private String icon;
-    private String description;
 }
